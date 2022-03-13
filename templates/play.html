@@ -154,25 +154,23 @@ margin-top: 5rem;
 </head>
 
 <body>
+  {{ filename }}
  
     <div class="container">
 
-        <audio controls>
+        <!-- <audio controls>
        
-            <source src="/static/{{filename}}" type="audio/mpeg">
-          Your browser does not support the audio element.
-          </audio>
+     
+       
+            <source src="/audio/sample.mp3" type="mpeg">
+  
+          </audio> -->
+
+          <audio src="/audio/sample.mp3" controls>
+            Your browser does not support the audio element.
+            </audio>
 
           <br><br>
-          
-      <label for="names" class="form-label mt-5">Content&nbsp;&nbsp; :</label>
-
-      <form action="/submit" method="POST" enctype="multipart/form-data">
-      <textarea rows="10" cols="10" class="form-control mb-3 mt-2" name="content" placeholder="Type here" type="text" id="names"></textarea>
-      <div>
-        <button onclick="document.location='default.asp'", class="btn btn-success">Submit</button>
-      </div>
-    </form>
 
   
 
