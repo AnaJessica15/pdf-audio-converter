@@ -6,6 +6,8 @@ https://askubuntu.com/questions/699502/ffmpeg-command-not-found
 
 https://stackoverflow.com/questions/65274843/oserror-libespeak-so-1-cannot-open-shared-object-file-no-such-file-or-directo
 
+https://dev.to/mustafaanaskh99/convert-any-pdf-file-into-an-audio-book-with-python-1gk4
+
 
 # todo
 
@@ -14,3 +16,12 @@ https://stackoverflow.com/questions/65274843/oserror-libespeak-so-1-cannot-open-
 - Downloadable
 - Dockerize
 - search audios
+
+-----------------------------------------
+https://www.codespeedy.com/create-an-audiobook-using-python-read-aloud/
+
+https://towardsdatascience.com/extracting-audio-from-video-using-python-58856a940fd
+
+https://www.geeksforgeeks.org/python-speech-recognition-on-large-audio-files/?ref=rp
+
+https://www.geeksforgeeks.org/file-searching-using-python/

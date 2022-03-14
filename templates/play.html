@@ -149,6 +149,11 @@
 margin-left: 35rem;
 margin-top: 5rem;
 }
+audio {
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+    width: 200px;
+    height: 25px;
+}
 
   </style>
 </head>
@@ -158,20 +163,26 @@ margin-top: 5rem;
  
     <div class="container">
 
-        <!-- <audio controls>
+      <p><a href="samples.mp3">Play mp3</a></p>
+
+
+<script src="http://mediaplayer.yahoo.com/js"></script>
+
+        <audio controls>
        
      
        
             <source src="/audio/sample.mp3" type="mpeg">
   
-          </audio> -->
-
-          <audio src="/audio/sample.mp3" controls>
+          </audio>
+      
+          <audio src="samples.mp3" controls type="audio/mpeg">
             Your browser does not support the audio element.
             </audio>
 
           <br><br>
 
+        
   
 
 
