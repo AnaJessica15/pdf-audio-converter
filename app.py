@@ -41,23 +41,33 @@ def create_audio():
         # # Set the speaker's gender: 0-> Male (default), 1-> Female
         # speaker.setProperty('voice', voices[1].id)
 
-        engine = pyttsx3.init()
+        # engine = pyttsx3.init()
+        engine = pyttsx3.init("espeak")
 
         for i in range(0, number_of_pages ):
     
             page = read_pdf.getPage(i)
             
             page_content = page.extractText()
-
             print(page_content)
         
             newrate=120
             engine.setProperty('rate', newrate)
             newvolume=3
             engine.setProperty('volume', newvolume)
-                
+
+            voices = engine.getProperty('voices')
+            # for v in voices:
+            #     print(v)
+
+            engine.setProperty('voice',voices[11].id)
+
+        # Set the speaker's gender: 0-> Male (default), 1-> Female
+            # engine.setProperty('voice', voices[1].id)
+
             # engine.say(page_content) 
         file_ext = os.path.splitext(filename)[0]
+
         audio = os.path.join(app.config['UPLOADED_FOLDER'],file_ext+'.mp3') 
 
         engine.save_to_file(page_content,audio) 
@@ -140,6 +150,8 @@ def display():
  
 
     return render_template('play.html', filename = audio_file)
+
+
 
 
 

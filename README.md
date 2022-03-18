@@ -17,6 +17,11 @@ https://dev.to/mustafaanaskh99/convert-any-pdf-file-into-an-audio-book-with-pyth
 - Dockerize
 - search audios
 
+https://stackoverflow.com/questions/64365006/how-to-change-voices-in-pyttsx3-modlue-of-python
+
+
+https://askubuntu.com/questions/1298356/espeak-text-to-speech-sounds-very-weird-while-running-pyttsx3-code-on-ubuntu-20
+
 -----------------------------------------
 https://www.codespeedy.com/create-an-audiobook-using-python-read-aloud/
 

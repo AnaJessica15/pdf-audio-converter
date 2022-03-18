@@ -163,22 +163,17 @@ audio {
  
     <div class="container">
 
-      <p><a href="samples.mp3">Play mp3</a></p>
+      <audio src="test.mp3" controls></audio>
 
-
-<script src="http://mediaplayer.yahoo.com/js"></script>
-
+      <audio src="static/audio/{{ filename }}" controls></audio>
         <audio controls>
        
      
        
-            <source src="/audio/sample.mp3" type="mpeg">
+            <source src="static/audio/{{ filename }}" type="audio/mp3">
   
           </audio>
       
-          <audio src="samples.mp3" controls type="audio/mpeg">
-            Your browser does not support the audio element.
-            </audio>
 
           <br><br>
 
